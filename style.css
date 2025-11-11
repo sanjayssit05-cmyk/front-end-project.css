@@ -1,0 +1,415 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  scroll-behavior: smooth;
+}
+header {
+  background: url('./image/banner-bg.png') center/cover no-repeat;
+  color: white;
+  top: 10px;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+  height: 85vh;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  font-size: 2.4em;
+  color: white;
+  text-shadow: 3px 3px 4px orangered;
+  text-decoration: none;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+nav {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+nav .fa-bars{
+    display: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  text-shadow: 3px 3px 4px orangered;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: orangered;
+  text-shadow: 3px 3px 4px white;
+}
+
+.login {
+  background-color: white;
+  border: none;
+  font-size: 1em;
+  padding: 10px 10px;
+  color: orangered;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: 0.3s;
+  box-shadow: 2px 2px 5px black;
+}
+nav .i{
+    padding-right: 5px;
+}
+.login:hover {
+  background-color: red;
+  color: white;
+}
+.head-section {
+  margin-top: 80px;
+  width: 55%;
+}
+
+header h1 {
+  font-size: 1.3em;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 4px orangered;
+}
+
+header h1 span {
+  color: orangered;
+  text-shadow: none;
+}
+
+header p {
+  margin: 20px 0;
+  font-size: 1.2em;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+header input[type="submit"],
+header input[type="button"] {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  font-weight: bolder;
+  /* background: transparent; */
+  color: orangered;
+  /* font-weight: bold; */
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+header input[type="submit"]{
+    background-color: red;
+    color: white;
+}
+header input:hover {
+  background-color: orangered;
+  color: white;
+}
+
+.section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 1.4em;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.para-head {
+  color: orangered;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.para-head2 {
+  max-width: 700px;
+  margin: auto;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  font-weight: bold;
+  line-height: 1.7;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.read-more {
+  margin-top: 20px;
+  background-color: orangered;
+  color: white;
+  border: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  border-radius: 4px;
+}
+
+.read-more:hover {
+  background-color: red;
+}
+
+.about-img {
+  margin-top: 40px;
+  border-radius: 10px;
+}
+figure {
+  text-align: center;
+  background-color: white;
+  padding: 60px 10%;
+}
+
+.head2 {
+  text-transform: uppercase;
+  color:black;
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.head-2a {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-transform: uppercase;
+  font-size:1em;
+  font-weight: bold;
+  box-shadow: 0 3px 10px black;
+  transition: transform 0.3s;
+}
+
+.head-2a img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+h4 {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 60px 0 20px;
+  color: grey;
+}
+
+.blog-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 0 10%;
+}
+
+.blog {
+  background: white;
+  box-shadow: 0 3px 10px black;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.blog img {
+  width: 100%;
+}
+
+.blog h3 {
+  margin: 15px;
+  color: orangered;
+  text-transform: uppercase;
+
+}
+
+.blog p {
+  /* margin: 0 15px 15px; */
+  font-size: large;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.month {
+  margin: 10px 15px;
+  color: white;
+  background-color: red;
+  width: 20%;
+  position: relative;
+  bottom: 500px;
+  padding: 3px;
+  right: 10px;
+}
+
+.btn {
+  margin: 15px;
+  background-color: orangered;
+  border: none;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  width: 40%;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.btn:hover {
+  background-color: orangered;
+}
+.form {
+  text-align: center;
+  padding: 60px 10%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.form-head {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.form input {
+  width: 80%;
+  max-width: 400px;
+  padding: 12px;
+  font-size: 1.2em;
+  border: 1px solid ghostwhite;
+  border-radius: 6px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  
+}
+
+.msg {
+  height: 100px;
+}
+
+.btn2 {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.btn2:hover {
+  background-color: orangered;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 40px 10%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-line-1 i {
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.footer-line-1 i:hover {
+  color: blue;
+}
+
+.foot {
+  margin: 5px 0;
+}
+
+.email-2 {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  width: 255px;
+  outline: none;
+  font-weight: bolder;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+iframe{
+    width: 100%;
+}
+.foot-head {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  nav ul {
+    flex-direction: column;
+    background: black;
+    position: absolute;
+    right: 30px;
+    top: 70px;
+    display: none;
+    padding: 20px;
+    border-radius: 6px;
+  }
+
+  .fa-bars {
+    display: block;
+  }
+
+  nav.active ul {
+    display: flex;
+  }
+
+  header {
+    padding: 80px 20px;
+  }
+  .blog{
+    /* margin-top: 10px; */
+    margin-right: 10px;
+    height: fit-content;
+  }
+  .btn{
+    width: 50%;
+  }
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
